@@ -31,6 +31,7 @@ export default class {
 
     this.editor.on('change', () => {
       localStorage.setItem('content', this.editor.getValue());
+      console.log(this.editor.getValue())
     });
 
     // Save the content of the editor when the editor itself is loses focus
